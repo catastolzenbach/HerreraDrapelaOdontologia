@@ -7,6 +7,7 @@ a {
     color: black;
 }
 
+/* barra paga tus prestaciones, todas las paginas */
 .barra-superior {
     background-color: #00a3ad;
     color: white;
@@ -16,6 +17,7 @@ a {
     font-size: 20px;
 }
 
+/* barra logo y menu, todas las paginas */
 .navegacion-principal {
     display: flex;
     justify-content: space-between;
@@ -47,7 +49,7 @@ nav ul li a:hover {
     color: #cffafc;
 }
 
-/* Oculta menú hamburguesa en escritorio */
+/* Oculta menú hamburguesa en escritorio, todas las paginas */
 .menu-icon,
 #menu-toggle {
     display: none;
@@ -79,6 +81,60 @@ nav ul li a:hover {
 
 
 
+/* asesoramiento y ubicacion */
+.asesoramiento-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.asesoramiento-texto {
+    flex: 1 1 45%;
+}
+
+.asesoramiento-texto h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.asesoramiento-texto h3 {
+    margin-bottom: 25px;
+}
+
+.asesoramiento-texto p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.asesoramiento-mapa {
+    flex: 1 1 45%;
+    min-height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* pie de pagina, todas las paginas */
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    gap: 0;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer p {
+    margin: 15px;
+}
 
 
 
@@ -95,6 +151,7 @@ nav ul li a:hover {
 
 
 
+/* pagina quienes somos */
 .equipo {
     display: flex;
     flex-direction: column;
