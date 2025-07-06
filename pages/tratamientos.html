@@ -29,9 +29,9 @@
                 <ul>
                     <li><a href="../index.html"> Inicio</a></li>
                     <li><a href="../pages/quiensoy.html"> Quienes Somos</a></li>
-                    <li><a href="../pages/blog.html">Blog</a></li>
                     <li><a href="../pages/tratamientos.html">Tratamientos</a></li>
                     <li><a href="../pages/seguros.html">Seguros y Planes</a></li>
+                    <li><a href="../pages/blog.html">Blog</a></li>
                     <li><a href="../pages/contacto.html">Contacto</a></li>
                 </ul>
             </nav>
@@ -46,12 +46,176 @@
         <h3>Nuestros especialistas se dedican a la atención de niños, adolescentes y adultos que presentan diferentes
             afecciones.</h3>
         <h3>Brindando un servicio de calidad, para entregar soluciones efectivas para cada caso clínico.</h3>
+
+        <div class="burbujas-tratamientos">
+            <!-- Consulta general -->
+            <div class="burbuja">
+                <div class="icono-burbuja"></div>
+                <div class="contenido-burbuja">
+                    <h2>Consulta general</h2>
+                    <p>Evaluación completa de tu salud bucal. Diagnóstico, plan de tratamiento y orientación
+                        profesional.
+                    </p>
+                </div>
+                <div class="info-burbuja">
+                    <span class="duracion"><i class="reloj"></i> 15 min</span>
+                    <span class="precio">$15.000 CLP</span>
+                </div>
+            </div>
+            <!-- Limpieza dental -->
+            <div class="burbuja">
+                <div class="icono-burbuja"></div>
+                <div class="contenido-burbuja">
+                    <h2>Limpieza dental</h2>
+                    <p>Elimina sarro y manchas. Previene caries y enfermedades gingivales. Sonrisa limpia y fresca.</p>
+                </div>
+                <div class="info-burbuja">
+                    <span class="duracion"><i class="reloj"></i> 30 min</span>
+                    <span class="precio">$40.000 CLP</span>
+                </div>
+            </div>
+            <!-- Blanqueamiento dental -->
+            <div class="burbuja">
+                <div class="icono-burbuja"></div>
+                <div class="contenido-burbuja">
+                    <h2>Blanqueamiento dental</h2>
+                    <p>Incluye limpieza dental y un agente blanqueador que aclara hasta 2 tonos. Procedimiento indoloro
+                        y sin reposo. Puede generar leve sensibilidad temporal.</p>
+                </div>
+                <div class="info-burbuja">
+                    <span class="duracion"><i class="reloj"></i> 1 hr</span>
+                    <span class="precio">$95.000 CLP</span>
+                </div>
+            </div>
+            <!-- Burbuja 4 -->
+            <div class="burbuja">
+                <div class="icono-burbuja"></div>
+                <div class="contenido-burbuja">
+                    <h2>Tratamiento 4</h2>
+                    <p>Descripción breve del tratamiento 4…</p>
+                </div>
+                <div class="info-burbuja">
+                    <span class="duracion"><i class="reloj"></i> 45 min</span>
+                    <span class="precio">$60.000 CLP</span>
+                </div>
+            </div>
+            <!-- Burbuja 5 -->
+            <div class="burbuja">
+                <div class="icono-burbuja"></div>
+                <div class="contenido-burbuja">
+                    <h2>Tratamiento 5</h2>
+                    <p>Descripción breve del tratamiento 5…</p>
+                </div>
+                <div class="info-burbuja">
+                    <span class="duracion"><i class="reloj"></i> 1 hr</span>
+                    <span class="precio">$80.000 CLP</span>
+                </div>
+            </div>
+            <!-- Burbuja 6 -->
+            <div class="burbuja">
+                <div class="icono-burbuja"></div>
+                <div class="contenido-burbuja">
+                    <h2>Tratamiento 6</h2>
+                    <p>Descripción breve del tratamiento 6…</p>
+                </div>
+                <div class="info-burbuja">
+                    <span class="duracion"><i class="reloj"></i> 1 hr 30 min</span>
+                    <span class="precio">$120.000 CLP</span>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const detalles = {
+                "Consulta general": {
+                    subtitulo: "Presencial",
+                    descripcion: `
+                        En esta consulta realizaremos un presupuesto y hablaremos sobre aquellos tratamientos necesarios para mejorar tu salud oral.<br><br>
+                        Si tienes algún dolor, molestia o duda esta consulta es ideal para ti.<br><br>
+                        Así aclaramos todas tus consultas y te informamos de qué deberías hacer respecto a diferentes tratamientos.
+                    `
+                },
+                "Limpieza dental": {
+                    subtitulo: "Presencial",
+                    descripcion: `
+                        La limpieza dental profesional elimina el sarro, placa bacteriana y manchas superficiales causadas por alimentos, bebidas y tabaco.<br><br>
+                        Utilizamos instrumentos especializados para limpiar zonas difíciles y dejar tus dientes más sanos y brillantes.<br><br>
+                        Este procedimiento previene enfermedades de las encías, mal aliento y caries, y se recomienda realizarlo cada 6 meses.<br><br>
+                        Es rápido, seguro y mejora notablemente la salud y apariencia de tu sonrisa.
+                    `
+                },
+                "Blanqueamiento dental": {
+                    subtitulo: "Presencial",
+                    descripcion: `
+                        Recupera la luminosidad natural de tu sonrisa con nuestro tratamiento de blanqueamiento dental.<br><br>
+                        Este procedimiento estético, seguro y eficaz elimina manchas superficiales causadas por el café, té, vino, tabaco y el paso del tiempo.<br><br>
+                        Utilizamos tecnología avanzada y productos de alta calidad que aclaran varios tonos el color de tus dientes desde la primera sesión.<br><br>
+                        Ideal para quienes desean una sonrisa más blanca y brillante sin dañar el esmalte dental.<br><br>
+                        El tratamiento se realiza bajo supervisión profesional y puede completarse en la clínica o con kits personalizados para usar en casa.<br><br>
+                        Resultados visibles, sonrisa saludable y confianza renovada.
+                    `
+                },
+                "Tratamiento 4": {
+                    subtitulo: "Presencial",
+                    descripcion: `
+                        Blanqueamiento incluye limpieza dental y agente blanqueador con el cual lograremos aclarar uno o dos tonos.<br>
+                        El procedimiento es indoloro y seguro.
+                    `
+                },
+                "Tratamiento 5": {
+                    subtitulo: "Presencial",
+                    descripcion: `
+                        Blanqueamiento incluye limpieza dental y agente blanqueador con el cual lograremos aclarar uno o dos tonos.<br>
+                        El procedimiento es indoloro y seguro.
+                    `
+                },
+                "Tratamiento 6": {
+                    subtitulo: "Presencial",
+                    descripcion: `
+                        Blanqueamiento incluye limpieza dental y agente blanqueador con el cual lograremos aclarar uno o dos tonos.<br>
+                        El procedimiento es indoloro y seguro.
+                    `
+                },
+                // Puedes agregar más tratamientos aquí si lo deseas
+            };
+
+            document.querySelectorAll('.burbuja').forEach(burbuja => {
+                burbuja.addEventListener('click', function () {
+                    const titulo = this.querySelector('h2').innerText;
+                    const detalle = detalles[titulo];
+                    if (detalle) {
+                        document.getElementById('detalle-titulo').innerText = titulo;
+                        document.getElementById('detalle-subtitulo').innerText = detalle.subtitulo;
+                        document.getElementById('detalle-descripcion').innerHTML = detalle.descripcion;
+                        document.getElementById('detalle-tratamiento').classList.remove('oculto');
+                    }
+                });
+            });
+
+            function cerrarDetalle() {
+                document.getElementById('detalle-tratamiento').classList.add('oculto');
+            }
+        </script>
+
+        <div id="detalle-tratamiento" class="detalle-tratamiento oculto">
+            <button class="cerrar-detalle" onclick="cerrarDetalle()">×</button>
+            <h2 id="detalle-titulo"></h2>
+            <h4 id="detalle-subtitulo"></h4>
+            <h3>Descripción</h3>
+            <div class="detalle-card" id="detalle-descripcion"></div>
+        </div>
+
+        <!-- texto entrada pagina -->
+        <h1>Casos y resultados</h1>
+        <h3></h3>
+        <h3></h3>
+        <h3></h3>
     </main>
 
     <!-- pie de pagina -->
     <footer>
         <p>Herrera Drápela Odontología</p>
-        <p>Todos los derechos reservados 2011 © </p>
+        <p>Todos los derechos reservados 2010 © </p>
         <p>Chile</p>
         <p>español</p>
     </footer>

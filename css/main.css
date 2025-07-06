@@ -1,10 +1,48 @@
+/* informacion que va igual en todas las paginas */
+/* color de fondo de todas las paginas */
 body {
     background-color: #cffafc;
 }
 
+/* color de los links de todas las paginas */
 a {
     text-decoration: none;
     color: black;
+}
+
+/* color de los links de todas las paginas al pasar el mouse */
+a:hover {
+    color: #00a3ad;
+}
+
+/* fuente de los titulos */
+h2 {
+  font-family: 'Neue Helvetica', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-variation-settings: "wght" 400;
+  /* 55 Roman normalmente es 400 */
+}
+
+/* fuente de los subtitulos */
+h3, h4 {
+  font-family: 'Neue Helvetica', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-variation-settings: "wght" 300;
+  /* 45 Light normalmente es 300 */
+}
+
+/* fuente de los parrafos */
+p {
+  font-family: 'Neue Helvetica', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  font-variation-settings: "wght" 300;
+  /* 45 Light normalmente es 300 */
 }
 
 /* barra paga tus prestaciones, todas las paginas */
@@ -126,10 +164,6 @@ footer {
     gap: 0;
     padding: 10px;
     font-size: 14px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
 }
 
 footer p {
@@ -205,6 +239,363 @@ footer p {
 
 
 
+
+
+
+
+
+
+
+
+/* pagina tratamientos*/
+.burbujas-tratamientos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 32px 0;
+}
+
+.burbuja {
+    display: flex;
+    align-items: center;
+    background: #9bfaff;
+    border-radius: 18px;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.08);
+    padding: 12px 18px;
+    gap: 16px;
+    width: 100%;
+    max-width: 540px;
+    min-height: 70px;
+}
+
+.icono-burbuja {
+    width: 48px;
+    height: 48px;
+    background:  white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+
+.contenido-burbuja {
+    flex: 1;
+}
+
+.contenido-burbuja h2 {
+    margin: 0 0 4px 0;
+    font-size: 1.08rem;
+    font-weight: bold;
+    color: black;
+}
+
+.contenido-burbuja p {
+    margin: 0;
+    color: black;
+    font-size: 0.98rem;
+    line-height: 1.2;
+}
+
+.info-burbuja {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    min-width: 90px;
+}
+
+.duracion {
+    color: #00a3ad;
+    font-weight: bold;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.precio {
+    color: black;
+    font-weight: bold;
+    font-size: 1.15rem;
+}
+
+
+/* detalles tratamientos, pagina tratamientos */
+.detalle-tratamiento {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #cffafc;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 60px 0 0 0;
+    min-height: 100vh;
+}
+
+.detalle-tratamiento.oculto {
+    display: none;
+}
+
+.detalle-tratamiento h2 {
+    font-size: 2.3rem;
+    margin-bottom: 0.1em;
+    color: black;
+    font-weight: bold;
+    margin-left: 180px;
+    margin-top: 40px;
+}
+
+.detalle-tratamiento h4 {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    font-weight: normal;
+    margin-left: 180px;
+    font-size: 1.2rem;
+}
+
+.detalle-tratamiento h3 {
+    margin-bottom: 0.5em;
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 180px;
+}
+
+.detalle-tratamiento .detalle-card {
+    background: #93eef3;
+    border-radius: 28px;
+    box-shadow: 0 4px 32px rgba(44, 62, 80, 0.10);
+    padding: 32px 36px;
+    font-size: 1.25rem;
+    color: #25325a;
+    max-width: 700px;
+    margin-left: 180px;
+    margin-bottom: 16px;
+    margin-top: 0.5em;
+}
+
+.cerrar-detalle {
+    position: absolute;
+    top: 32px;
+    right: 48px;
+    background: none;
+    border: none;
+    font-size: 2.2rem;
+    color: #00a3ad;
+    cursor: pointer;
+    font-weight: bold;
+    transition: color 0.2s;
+    z-index: 1100;
+}
+.cerrar-detalle:hover {
+    color: #7c3aed;
+}
+
+
+
+
+
+
+
+/* media queries para las vistas responsives */
+/* --- Responsive para tablets y móviles --- */
+@media (max-width: 1024px) {
+  .navegacion-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    position: relative;
+  }
+  .logo {
+    margin-right: auto;
+    height: 40px;
+  }
+  .menu-icon {
+    margin-left: auto;
+    margin-right: 0;
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1101;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+  }
+  .navegacion-principal nav ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  .barra-superior {
+    font-size: 16px;
+  }
+  .menu-icon span {
+    width: 28px;
+    height: 3px;
+    background: #222;
+    border-radius: 2px;
+    display: block;
+  }
+  .navegacion-principal nav ul {
+    display: none;
+  }
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 1100;
+    padding-top: 60px;
+    gap: 0;
+    align-items: flex-start;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    font-size: 1.3rem;
+    transition: all 0.3s;
+  }
+  .navegacion-principal nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+  }
+  .navegacion-principal nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 18px 32px;
+    color: #222;
+    font-weight: 400;
+  }
+  /* Botón X para cerrar */
+  #menu-toggle:checked + .menu-icon::before {
+    content: '✕';
+    position: fixed;
+    top: 18px;
+    left: 24px;
+    font-size: 2.2rem;
+    color: #222;
+    z-index: 1200;
+    background: #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    cursor: pointer;
+  }
+  /* Oculta las barras cuando el menú está abierto */
+  #menu-toggle:checked + .menu-icon span {
+    opacity: 0;
+  }
+  .burbujas-tratamientos {
+    padding-right: 16px;
+  }
+}
+
+/* Menú hamburguesa para móviles */
+@media (max-width: 768px) {
+  .navegacion-principal {
+    flex-direction: row;
+    padding: 10px 5px;
+  }
+  .menu-icon {
+    display: flex !important;
+  }
+  .navegacion-principal nav ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #93eef3;
+    width: 100%;
+    flex-direction: column;
+    gap: 0;
+    z-index: 100;
+  }
+  #menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+  }
+}
+
+/* Ajustes para burbujas de tratamientos */
+@media (max-width: 900px) {
+  .burbujas-tratamientos {
+    gap: 12px;
+  }
+  .burbuja {
+    max-width: 98vw;
+    padding: 10px 6px;
+    border-radius: 12px;
+    font-size: 0.98rem;
+  }
+  .icono-burbuja {
+    width: 38px;
+    height: 38px;
+    font-size: 18px;
+    border-radius: 7px;
+  }
+  .contenido-burbuja h2 {
+    font-size: 1rem;
+  }
+  .contenido-burbuja p {
+    font-size: 0.95rem;
+  }
+  .info-burbuja {
+    min-width: 60px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Ajustes para el panel de detalle en móvil */
+@media (max-width: 600px) {
+  .detalle-tratamiento {
+    padding: 10px 0 0 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .detalle-tratamiento h2,
+  .detalle-tratamiento h3,
+  .detalle-tratamiento h4,
+  .detalle-tratamiento .detalle-card {
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    max-width: 98vw !important;
+    font-size: 1.1rem !important;
+  }
+  .detalle-tratamiento .detalle-card {
+    padding: 14px 10px;
+    font-size: 1rem;
+  }
+  .cerrar-detalle {
+    top: 10px;
+    right: 16px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Footer responsive */
+@media (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+  footer p {
+    margin: 4px 0;
+  }
+}
 
 
 /*
@@ -739,5 +1130,3 @@ footer p {
       flex-direction: column;
     }
   }
-
-*/
