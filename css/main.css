@@ -2162,17 +2162,10 @@ footer p {
 }
 
 .hero-contacto h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
     font-weight: 700;
     color: white;
-}
-
-.hero-contacto h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.9);
 }
 
 .hero-contacto h3 {
@@ -2532,10 +2525,6 @@ footer p {
         font-size: 3rem;
     }
     
-    .hero-contacto h2 {
-        font-size: 2.5rem;
-    }
-    
     .contacto-grid {
         grid-template-columns: 1fr;
         gap: 50px;
@@ -2559,10 +2548,6 @@ footer p {
     
     .hero-contacto h1 {
         font-size: 2.2rem;
-    }
-    
-    .hero-contacto h2 {
-        font-size: 1.8rem;
     }
     
     .hero-contacto h3 {
@@ -2688,10 +2673,6 @@ footer p {
 @media (max-width: 480px) {
     .hero-contacto h1 {
         font-size: 1.8rem;
-    }
-    
-    .hero-contacto h2 {
-        font-size: 1.5rem;
     }
     
     .hero-contacto h3 {
