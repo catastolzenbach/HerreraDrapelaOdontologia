@@ -47,7 +47,8 @@ p {
   font-style: normal;
   font-stretch: normal;
   font-variation-settings: "wght" 300;
-  margin: 0;
+  margin: 0 0 20px 0;
+  line-height: 1.6;
 }
 
 /* Container general */
@@ -242,6 +243,7 @@ nav ul li a:hover::after {
 .hero-card p {
     color: #666;
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 
 /* Servicios Destacados */
@@ -305,6 +307,7 @@ nav ul li a:hover::after {
     color: #666;
     font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 0;
 }
 
 /* Sección de Urgencias */
@@ -475,6 +478,7 @@ nav ul li a:hover::after {
     color: #555;
     font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 0;
 }
 
 .btn-contacto {
@@ -568,6 +572,7 @@ footer {
 .footer-info p {
     color: #ccc;
     font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 .footer-links {
