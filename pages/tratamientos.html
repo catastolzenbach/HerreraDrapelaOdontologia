@@ -1,21 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/main.css">
-    <title>TRATAMIENTOS Herrera Drapela Odontologia</title>
+    <title>Tratamientos - Herrera Drápela Odontología</title>
 </head>
 
-<body class="pagina-blog">
-    <!-- boton volver a inicio -->
+<body class="pagina-tratamientos">
+    <!-- Header -->
     <header>
         <div class="navegacion-principal">
-            <a href="../index.html">
-                <img src="../images/AHLOGO.png" alt="Logotipo de la consulta" class="logo">
-            </a>
+            <img src="../images/AHLOGO.png" alt="Herrera Drápela Odontología" class="logo">
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
                 <span></span>
@@ -24,198 +21,405 @@
             </label>
             <nav>
                 <ul>
-                    <li><a href="../index.html"> Inicio</a></li>
-                    <li><a href="../pages/quiensoy.html"> Quienes Somos</a></li>
-                    <li><a href="../pages/tratamientos.html">Tratamientos</a></li>
-                    <li><a href="../pages/casos-testimonios.html">Casos y Testimonios</a></li>
-                    <li><a href="../pages/blog.html">Blog</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="quiensoy.html">Quienes Somos</a></li>
+                    <li><a href="tratamientos.html">Tratamientos</a></li>
+                    <li><a href="casos-testimonios.html">Casos y Testimonios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- texto entrada pagina -->
-        <h1>Especialidades y tratamientos</h1>
-        <h3>En Herrera Drápela Odontología contamos con la más amplia variedad de especialidades odontológicas, lo que
-            permite tratar las diversas patologías que afectan la salud bucal.</h3>
-        <h3>Nuestros especialistas se dedican a la atención de niños, adolescentes y adultos que presentan diferentes
-            afecciones.</h3>
-        <h3>Brindando un servicio de calidad, para entregar soluciones efectivas para cada caso clínico.</h3>
-
-        <div class="burbujas-tratamientos">
-            <!-- Consulta general -->
-            <div class="burbuja">
-                <div class="icono-burbuja"></div>
-                <div class="contenido-burbuja">
-                    <h2>Consulta general</h2>
-                    <p>Evaluación completa de tu salud bucal. Diagnóstico, plan de tratamiento y orientación
-                        profesional.
-                    </p>
-                </div>
-                <div class="info-burbuja">
-                    <span class="duracion"><i class="reloj"></i> 15 min</span>
-                    <span class="precio">$15.000 CLP</span>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero-tratamientos">
+        <div class="container">
+            <div class="hero-content">
+                <h1>NUESTROS TRATAMIENTOS</h1>
+                <h2>Especialidades Odontológicas</h2>
+                <p class="hero-subtitle">Cuidado integral de tu salud bucal</p>
+                <p class="hero-description">
+                    En Herrera Drápela Odontología contamos con la más amplia variedad de especialidades odontológicas, 
+                    lo que nos permite tratar las diversas patologías que afectan la salud bucal. Nuestros especialistas 
+                    se dedican a la atención de niños, adolescentes y adultos, brindando un servicio de calidad para 
+                    entregar soluciones efectivas para cada caso clínico.
+                </p>
             </div>
-            <!-- Limpieza dental -->
-            <div class="burbuja">
-                <div class="icono-burbuja"></div>
-                <div class="contenido-burbuja">
-                    <h2>Limpieza dental</h2>
+        </div>
+    </section>
+
+    <!-- Tratamientos Principales -->
+    <section class="tratamientos-principales">
+        <div class="container">
+            <h2>TRATAMIENTOS DESTACADOS</h2>
+            <h3>Soluciones integrales para tu salud bucal</h3>
+            
+            <div class="tratamientos-grid">
+                <div class="tratamiento-card">
+                    <div class="tratamiento-icon">🦷</div>
+                    <h4>Consulta General</h4>
+                    <p>Evaluación completa de tu salud bucal. Diagnóstico, plan de tratamiento y orientación profesional.</p>
+                    <div class="tratamiento-info">
+                        <span class="duracion">⏱️ 15 min</span>
+                        <span class="precio">$15.000 CLP</span>
+                    </div>
+                    <button class="btn-detalle" onclick="mostrarDetalle('Consulta General')">Ver Detalles</button>
+                </div>
+
+                <div class="tratamiento-card">
+                    <div class="tratamiento-icon">✨</div>
+                    <h4>Limpieza Dental</h4>
                     <p>Elimina sarro y manchas. Previene caries y enfermedades gingivales. Sonrisa limpia y fresca.</p>
+                    <div class="tratamiento-info">
+                        <span class="duracion">⏱️ 30 min</span>
+                        <span class="precio">$40.000 CLP</span>
+                    </div>
+                    <button class="btn-detalle" onclick="mostrarDetalle('Limpieza Dental')">Ver Detalles</button>
                 </div>
-                <div class="info-burbuja">
-                    <span class="duracion"><i class="reloj"></i> 30 min</span>
-                    <span class="precio">$40.000 CLP</span>
+
+                <div class="tratamiento-card">
+                    <div class="tratamiento-icon">😁</div>
+                    <h4>Blanqueamiento Dental</h4>
+                    <p>Incluye limpieza dental y agente blanqueador que aclara hasta 2 tonos. Procedimiento indoloro y sin reposo.</p>
+                    <div class="tratamiento-info">
+                        <span class="duracion">⏱️ 1 hora</span>
+                        <span class="precio">$95.000 CLP</span>
+                    </div>
+                    <button class="btn-detalle" onclick="mostrarDetalle('Blanqueamiento Dental')">Ver Detalles</button>
                 </div>
-            </div>
-            <!-- Blanqueamiento dental -->
-            <div class="burbuja">
-                <div class="icono-burbuja"></div>
-                <div class="contenido-burbuja">
-                    <h2>Blanqueamiento dental</h2>
-                    <p>Incluye limpieza dental y un agente blanqueador que aclara hasta 2 tonos. Procedimiento indoloro
-                        y sin reposo. Puede generar leve sensibilidad temporal.</p>
+
+                <div class="tratamiento-card">
+                    <div class="tratamiento-icon">🦿</div>
+                    <h4>Ortodoncia</h4>
+                    <p>Corrección de la posición dental para una sonrisa perfecta y funcional. Tratamientos personalizados.</p>
+                    <div class="tratamiento-info">
+                        <span class="duracion">⏱️ Consulta</span>
+                        <span class="precio">Desde $60.000 CLP</span>
+                    </div>
+                    <button class="btn-detalle" onclick="mostrarDetalle('Ortodoncia')">Ver Detalles</button>
                 </div>
-                <div class="info-burbuja">
-                    <span class="duracion"><i class="reloj"></i> 1 hr</span>
-                    <span class="precio">$95.000 CLP</span>
+
+                <div class="tratamiento-card">
+                    <div class="tratamiento-icon">🦷</div>
+                    <h4>Implantes Dentales</h4>
+                    <p>Soluciones permanentes para reemplazar dientes faltantes. Tecnología avanzada y resultados naturales.</p>
+                    <div class="tratamiento-info">
+                        <span class="duracion">⏱️ Consulta</span>
+                        <span class="precio">Desde $80.000 CLP</span>
+                    </div>
+                    <button class="btn-detalle" onclick="mostrarDetalle('Implantes Dentales')">Ver Detalles</button>
                 </div>
-            </div>
-            <!-- Burbuja 4 -->
-            <div class="burbuja">
-                <div class="icono-burbuja"></div>
-                <div class="contenido-burbuja">
-                    <h2>Tratamiento 4</h2>
-                    <p>Descripción breve del tratamiento 4…</p>
-                </div>
-                <div class="info-burbuja">
-                    <span class="duracion"><i class="reloj"></i> 45 min</span>
-                    <span class="precio">$60.000 CLP</span>
-                </div>
-            </div>
-            <!-- Burbuja 5 -->
-            <div class="burbuja">
-                <div class="icono-burbuja"></div>
-                <div class="contenido-burbuja">
-                    <h2>Tratamiento 5</h2>
-                    <p>Descripción breve del tratamiento 5…</p>
-                </div>
-                <div class="info-burbuja">
-                    <span class="duracion"><i class="reloj"></i> 1 hr</span>
-                    <span class="precio">$80.000 CLP</span>
-                </div>
-            </div>
-            <!-- Burbuja 6 -->
-            <div class="burbuja">
-                <div class="icono-burbuja"></div>
-                <div class="contenido-burbuja">
-                    <h2>Tratamiento 6</h2>
-                    <p>Descripción breve del tratamiento 6…</p>
-                </div>
-                <div class="info-burbuja">
-                    <span class="duracion"><i class="reloj"></i> 1 hr 30 min</span>
-                    <span class="precio">$120.000 CLP</span>
+
+                <div class="tratamiento-card">
+                    <div class="tratamiento-icon">✨</div>
+                    <h4>Carillas Dentales</h4>
+                    <p>Transforma tu sonrisa con carillas de porcelana. Resultados naturales y duraderos.</p>
+                    <div class="tratamiento-info">
+                        <span class="duracion">⏱️ Consulta</span>
+                        <span class="precio">Desde $120.000 CLP</span>
+                    </div>
+                    <button class="btn-detalle" onclick="mostrarDetalle('Carillas Dentales')">Ver Detalles</button>
                 </div>
             </div>
         </div>
+    </section>
 
-        <script>
-            const detalles = {
-                "Consulta general": {
-                    subtitulo: "Presencial",
-                    descripcion: `
-                        En esta consulta realizaremos un presupuesto y hablaremos sobre aquellos tratamientos necesarios para mejorar tu salud oral.<br><br>
-                        Si tienes algún dolor, molestia o duda esta consulta es ideal para ti.<br><br>
-                        Así aclaramos todas tus consultas y te informamos de qué deberías hacer respecto a diferentes tratamientos.
-                    `
-                },
-                "Limpieza dental": {
-                    subtitulo: "Presencial",
-                    descripcion: `
-                        La limpieza dental profesional elimina el sarro, placa bacteriana y manchas superficiales causadas por alimentos, bebidas y tabaco.<br><br>
-                        Utilizamos instrumentos especializados para limpiar zonas difíciles y dejar tus dientes más sanos y brillantes.<br><br>
-                        Este procedimiento previene enfermedades de las encías, mal aliento y caries, y se recomienda realizarlo cada 6 meses.<br><br>
-                        Es rápido, seguro y mejora notablemente la salud y apariencia de tu sonrisa.
-                    `
-                },
-                "Blanqueamiento dental": {
-                    subtitulo: "Presencial",
-                    descripcion: `
-                        Recupera la luminosidad natural de tu sonrisa con nuestro tratamiento de blanqueamiento dental.<br><br>
-                        Este procedimiento estético, seguro y eficaz elimina manchas superficiales causadas por el café, té, vino, tabaco y el paso del tiempo.<br><br>
-                        Utilizamos tecnología avanzada y productos de alta calidad que aclaran varios tonos el color de tus dientes desde la primera sesión.<br><br>
-                        Ideal para quienes desean una sonrisa más blanca y brillante sin dañar el esmalte dental.<br><br>
-                        El tratamiento se realiza bajo supervisión profesional y puede completarse en la clínica o con kits personalizados para usar en casa.<br><br>
-                        Resultados visibles, sonrisa saludable y confianza renovada.
-                    `
-                },
-                "Tratamiento 4": {
-                    subtitulo: "Presencial",
-                    descripcion: `
-                        Blanqueamiento incluye limpieza dental y agente blanqueador con el cual lograremos aclarar uno o dos tonos.<br>
-                        El procedimiento es indoloro y seguro.
-                    `
-                },
-                "Tratamiento 5": {
-                    subtitulo: "Presencial",
-                    descripcion: `
-                        Blanqueamiento incluye limpieza dental y agente blanqueador con el cual lograremos aclarar uno o dos tonos.<br>
-                        El procedimiento es indoloro y seguro.
-                    `
-                },
-                "Tratamiento 6": {
-                    subtitulo: "Presencial",
-                    descripcion: `
-                        Blanqueamiento incluye limpieza dental y agente blanqueador con el cual lograremos aclarar uno o dos tonos.<br>
-                        El procedimiento es indoloro y seguro.
-                    `
-                },
-                // Puedes agregar más tratamientos aquí si lo deseas
-            };
+    <!-- Especialidades -->
+    <section class="especialidades-section">
+        <div class="container">
+            <h2>NUESTRAS ESPECIALIDADES</h2>
+            <h3>Equipo de profesionales especializados</h3>
+            
+            <div class="especialidades-grid">
+                <div class="especialidad-card">
+                    <div class="especialidad-icon">👶</div>
+                    <h4>Odontopediatría</h4>
+                    <p>Atención especializada para niños y adolescentes. Cuidamos la salud bucal desde los primeros años.</p>
+                </div>
 
-            document.querySelectorAll('.burbuja').forEach(burbuja => {
-                burbuja.addEventListener('click', function () {
-                    const titulo = this.querySelector('h2').innerText;
-                    const detalle = detalles[titulo];
-                    if (detalle) {
-                        document.getElementById('detalle-titulo').innerText = titulo;
-                        document.getElementById('detalle-subtitulo').innerText = detalle.subtitulo;
-                        document.getElementById('detalle-descripcion').innerHTML = detalle.descripcion;
-                        document.getElementById('detalle-tratamiento').classList.remove('oculto');
-                    }
-                });
-            });
+                <div class="especialidad-card">
+                    <div class="especialidad-icon">👨‍⚕️</div>
+                    <h4>Endodoncia</h4>
+                    <p>Tratamiento de conductos radiculares. Salvamos dientes que antes se extraían.</p>
+                </div>
 
-            function cerrarDetalle() {
-                document.getElementById('detalle-tratamiento').classList.add('oculto');
-            }
-        </script>
+                <div class="especialidad-card">
+                    <div class="especialidad-icon">🦷</div>
+                    <h4>Periodoncia</h4>
+                    <p>Tratamiento de enfermedades de las encías. Mantenemos tus dientes sanos y firmes.</p>
+                </div>
 
-        <div id="detalle-tratamiento" class="detalle-tratamiento oculto">
-            <button class="cerrar-detalle" onclick="cerrarDetalle()">×</button>
-            <h2 id="detalle-titulo"></h2>
-            <h4 id="detalle-subtitulo"></h4>
-            <h3>Descripción</h3>
-            <div class="detalle-card" id="detalle-descripcion"></div>
+                <div class="especialidad-card">
+                    <div class="especialidad-icon">😁</div>
+                    <h4>Estética Dental</h4>
+                    <p>Transformamos sonrisas con tratamientos estéticos avanzados y naturales.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <!-- texto entrada pagina -->
-        <h1>Casos y resultados</h1>
-        <h3></h3>
-        <h3></h3>
-        <h3></h3>
-    </main>
+    <!-- Proceso de Atención -->
+    <section class="proceso-section">
+        <div class="container">
+            <h2>NUESTRO PROCESO</h2>
+            <h3>Así trabajamos para cuidar tu sonrisa</h3>
+            
+            <div class="proceso-grid">
+                <div class="proceso-card">
+                    <div class="proceso-numero">1</div>
+                    <h4>Consulta Inicial</h4>
+                    <p>Evaluación completa de tu salud bucal y diagnóstico personalizado.</p>
+                </div>
 
-    <!-- pie de pagina -->
+                <div class="proceso-card">
+                    <div class="proceso-numero">2</div>
+                    <h4>Plan de Tratamiento</h4>
+                    <p>Diseñamos un plan personalizado según tus necesidades y objetivos.</p>
+                </div>
+
+                <div class="proceso-card">
+                    <div class="proceso-numero">3</div>
+                    <h4>Ejecución</h4>
+                    <p>Realizamos el tratamiento con la máxima calidad y cuidado.</p>
+                </div>
+
+                <div class="proceso-card">
+                    <div class="proceso-numero">4</div>
+                    <h4>Seguimiento</h4>
+                    <p>Acompañamiento continuo para mantener los resultados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿LISTO PARA CUIDAR TU SONRISA?</h2>
+            <h3>Agenda tu consulta y descubre cómo podemos ayudarte</h3>
+            <a href="https://ff.healthatom.io/n7yka4" class="btn-cta">AGENDA TU CONSULTA</a>
+        </div>
+    </section>
+
+    <!-- Modal de Detalles -->
+    <div id="modal-detalle" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <div id="modal-contenido">
+                <!-- El contenido se llenará dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>Herrera Drápela Odontología</p>
-        <p>Todos los derechos reservados 2010 © </p>
-        <p>Chile</p>
-        <p>español</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Herrera Drápela Odontología</h4>
+                    <p>Tu sonrisa, nuestra pasión desde 2010</p>
+                </div>
+                <div class="footer-links">
+                    <a href="quiensoy.html">Quienes Somos</a>
+                    <a href="tratamientos.html">Tratamientos</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-legal">
+                    <p>© 2024 Herrera Drápela Odontología. Todos los derechos reservados.</p>
+                    <p>Chile</p>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const detallesTratamientos = {
+            "Consulta General": {
+                titulo: "Consulta General",
+                subtitulo: "Evaluación Integral",
+                descripcion: `
+                    <p>En esta consulta realizaremos una evaluación completa de tu salud bucal y hablaremos sobre aquellos tratamientos necesarios para mejorar tu salud oral.</p>
+                    
+                    <h5>¿Cuándo necesitas una consulta general?</h5>
+                    <ul>
+                        <li>Si tienes algún dolor o molestia dental</li>
+                        <li>Para revisiones periódicas de salud bucal</li>
+                        <li>Si tienes dudas sobre tratamientos</li>
+                        <li>Para obtener un presupuesto personalizado</li>
+                    </ul>
+                    
+                    <h5>¿Qué incluye?</h5>
+                    <ul>
+                        <li>Examen clínico completo</li>
+                        <li>Diagnóstico personalizado</li>
+                        <li>Plan de tratamiento</li>
+                        <li>Orientación profesional</li>
+                    </ul>
+                    
+                    <p><strong>Duración:</strong> 15 minutos<br>
+                    <strong>Precio:</strong> $15.000 CLP</p>
+                `
+            },
+            "Limpieza Dental": {
+                titulo: "Limpieza Dental Profesional",
+                subtitulo: "Higiene Bucal Completa",
+                descripcion: `
+                    <p>La limpieza dental profesional elimina el sarro, placa bacteriana y manchas superficiales causadas por alimentos, bebidas y tabaco.</p>
+                    
+                    <h5>Beneficios de la limpieza dental:</h5>
+                    <ul>
+                        <li>Elimina sarro y placa bacteriana</li>
+                        <li>Previene enfermedades de las encías</li>
+                        <li>Elimina manchas superficiales</li>
+                        <li>Previene el mal aliento</li>
+                        <li>Reduce el riesgo de caries</li>
+                    </ul>
+                    
+                    <h5>¿Con qué frecuencia?</h5>
+                    <p>Se recomienda realizarlo cada 6 meses para mantener una salud bucal óptima.</p>
+                    
+                    <p><strong>Duración:</strong> 30 minutos<br>
+                    <strong>Precio:</strong> $40.000 CLP</p>
+                `
+            },
+            "Blanqueamiento Dental": {
+                titulo: "Blanqueamiento Dental",
+                subtitulo: "Sonrisa Brillante",
+                descripcion: `
+                    <p>Recupera la luminosidad natural de tu sonrisa con nuestro tratamiento de blanqueamiento dental seguro y eficaz.</p>
+                    
+                    <h5>¿Qué logramos?</h5>
+                    <ul>
+                        <li>Aclarar varios tonos el color de tus dientes</li>
+                        <li>Eliminar manchas superficiales</li>
+                        <li>Resultados visibles desde la primera sesión</li>
+                        <li>Procedimiento seguro y sin daño al esmalte</li>
+                    </ul>
+                    
+                    <h5>¿Para quién es ideal?</h5>
+                    <ul>
+                        <li>Personas con dientes manchados por café, té, vino</li>
+                        <li>Fumadores que desean aclarar sus dientes</li>
+                        <li>Quienes buscan una sonrisa más brillante</li>
+                        <li>Pacientes con manchas por el paso del tiempo</li>
+                    </ul>
+                    
+                    <p><strong>Duración:</strong> 1 hora<br>
+                    <strong>Precio:</strong> $95.000 CLP</p>
+                `
+            },
+            "Ortodoncia": {
+                titulo: "Ortodoncia",
+                subtitulo: "Sonrisa Perfecta",
+                descripcion: `
+                    <p>Corregimos la posición de tus dientes para lograr una sonrisa perfecta y funcional con tratamientos personalizados.</p>
+                    
+                    <h5>Tipos de ortodoncia que ofrecemos:</h5>
+                    <ul>
+                        <li>Brackets metálicos tradicionales</li>
+                        <li>Brackets estéticos de cerámica</li>
+                        <li>Ortodoncia invisible (Invisalign)</li>
+                        <li>Ortodoncia lingual</li>
+                    </ul>
+                    
+                    <h5>Beneficios:</h5>
+                    <ul>
+                        <li>Corrección de la mordida</li>
+                        <li>Mejora de la estética facial</li>
+                        <li>Prevención de problemas de salud</li>
+                        <li>Mayor facilidad para la limpieza dental</li>
+                    </ul>
+                    
+                    <p><strong>Duración:</strong> Varía según el caso<br>
+                    <strong>Precio:</strong> Desde $60.000 CLP</p>
+                `
+            },
+            "Implantes Dentales": {
+                titulo: "Implantes Dentales",
+                subtitulo: "Soluciones Permanentes",
+                descripcion: `
+                    <p>Reemplazamos dientes faltantes con implantes dentales que se ven y funcionan como dientes naturales.</p>
+                    
+                    <h5>Ventajas de los implantes:</h5>
+                    <ul>
+                        <li>Soluciones permanentes y duraderas</li>
+                        <li>Se ven y funcionan como dientes naturales</li>
+                        <li>Preservan la estructura ósea</li>
+                        <li>No afectan los dientes adyacentes</li>
+                        <li>Permiten comer y hablar con normalidad</li>
+                    </ul>
+                    
+                    <h5>Proceso:</h5>
+                    <ul>
+                        <li>Evaluación y planificación</li>
+                        <li>Colocación del implante</li>
+                        <li>Período de integración</li>
+                        <li>Colocación de la corona</li>
+                    </ul>
+                    
+                    <p><strong>Duración:</strong> Varía según el caso<br>
+                    <strong>Precio:</strong> Desde $80.000 CLP</p>
+                `
+            },
+            "Carillas Dentales": {
+                titulo: "Carillas Dentales",
+                subtitulo: "Transformación Estética",
+                descripcion: `
+                    <p>Transforma tu sonrisa con carillas de porcelana que corrigen forma, color y tamaño de tus dientes.</p>
+                    
+                    <h5>¿Qué corregimos con las carillas?</h5>
+                    <ul>
+                        <li>Dientes manchados o decolorados</li>
+                        <li>Dientes con forma irregular</li>
+                        <li>Espacios entre dientes</li>
+                        <li>Dientes rotos o desgastados</li>
+                        <li>Asimetrías en la sonrisa</li>
+                    </ul>
+                    
+                    <h5>Características:</h5>
+                    <ul>
+                        <li>Material de porcelana de alta calidad</li>
+                        <li>Resultados naturales y duraderos</li>
+                        <li>Procedimiento mínimamente invasivo</li>
+                        <li>Resistente a manchas</li>
+                    </ul>
+                    
+                    <p><strong>Duración:</strong> Varía según el caso<br>
+                    <strong>Precio:</strong> Desde $120.000 CLP</p>
+                `
+            }
+        };
+
+        function mostrarDetalle(tratamiento) {
+            const detalle = detallesTratamientos[tratamiento];
+            if (detalle) {
+                document.getElementById('modal-contenido').innerHTML = `
+                    <h2>${detalle.titulo}</h2>
+                    <h4>${detalle.subtitulo}</h4>
+                    <div class="detalle-contenido">
+                        ${detalle.descripcion}
+                    </div>
+                    <div class="modal-cta">
+                        <a href="https://ff.healthatom.io/n7yka4" class="btn-cta">Agendar Consulta</a>
+                    </div>
+                `;
+                document.getElementById('modal-detalle').style.display = 'block';
+            }
+        }
+
+        function cerrarModal() {
+            document.getElementById('modal-detalle').style.display = 'none';
+        }
+
+        // Cerrar modal al hacer clic fuera de él
+        window.onclick = function(event) {
+            const modal = document.getElementById('modal-detalle');
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 
 </html>

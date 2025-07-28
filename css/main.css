@@ -3848,3 +3848,485 @@ footer p {
         font-size: 2.5rem;
     }
 }
+
+/* Estilos para la página de Tratamientos */
+
+/* Hero Section */
+.hero-tratamientos {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 120px 0 80px;
+    text-align: center;
+}
+
+.hero-tratamientos h1 {
+    font-size: 3.5rem;
+    color: #00a3ad;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-tratamientos h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.hero-tratamientos .hero-subtitle {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.hero-tratamientos .hero-description {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Tratamientos Principales */
+.tratamientos-principales {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.tratamientos-principales h2 {
+    font-size: 2.5rem;
+    color: #00a3ad;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tratamientos-principales h3 {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.tratamientos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.tratamiento-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.tratamiento-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tratamiento-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.tratamiento-card h4 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tratamiento-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tratamiento-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.duracion, .precio {
+    background: #f8f9fa;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.precio {
+    background: #e3f2fd;
+    color: #1976d2;
+    font-weight: 600;
+}
+
+.btn-detalle {
+    background: linear-gradient(135deg, #00a3ad 0%, #008c94 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn-detalle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 163, 173, 0.3);
+}
+
+/* Especialidades */
+.especialidades-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.especialidades-section h2 {
+    font-size: 2.5rem;
+    color: #00a3ad;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.especialidades-section h3 {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.especialidades-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.especialidad-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.especialidad-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.especialidad-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.especialidad-card h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.especialidad-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Proceso de Atención */
+.proceso-section {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.proceso-section h2 {
+    font-size: 2.5rem;
+    color: #00a3ad;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.proceso-section h3 {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.proceso-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.proceso-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.proceso-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    border-color: #00a3ad;
+}
+
+.proceso-numero {
+    background: linear-gradient(135deg, #00a3ad 0%, #008c94 100%);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.proceso-card h4 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.proceso-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 2001;
+}
+
+.close:hover,
+.close:focus {
+    color: #00a3ad;
+    text-decoration: none;
+}
+
+#modal-contenido {
+    padding: 40px;
+}
+
+#modal-contenido h2 {
+    color: #00a3ad;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#modal-contenido h4 {
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+#modal-contenido h5 {
+    color: #333;
+    font-size: 1.1rem;
+    margin: 25px 0 15px;
+    font-weight: 600;
+}
+
+#modal-contenido p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+#modal-contenido ul {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+#modal-contenido li {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+#modal-contenido strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.modal-cta {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive para Tratamientos */
+@media (max-width: 1024px) {
+    .hero-tratamientos h1 {
+        font-size: 3rem;
+    }
+    
+    .hero-tratamientos h2 {
+        font-size: 2rem;
+    }
+    
+    .tratamientos-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
+    }
+    
+    .especialidades-grid,
+    .proceso-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-tratamientos {
+        padding: 100px 0 60px;
+    }
+    
+    .hero-tratamientos h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-tratamientos h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-tratamientos .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .tratamientos-principales h2,
+    .especialidades-section h2,
+    .proceso-section h2 {
+        font-size: 2rem;
+    }
+    
+    .tratamientos-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .especialidades-grid,
+    .proceso-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .tratamiento-card,
+    .especialidad-card,
+    .proceso-card {
+        padding: 25px;
+    }
+    
+    .tratamiento-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    #modal-contenido {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-tratamientos h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-tratamientos h2 {
+        font-size: 1.5rem;
+    }
+    
+    .tratamiento-card h4,
+    .especialidad-card h4,
+    .proceso-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .tratamiento-icon,
+    .especialidad-icon {
+        font-size: 2.5rem;
+    }
+    
+    .proceso-numero {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    
+    #modal-contenido {
+        padding: 20px;
+    }
+    
+    #modal-contenido h2 {
+        font-size: 1.6rem;
+    }
+}
