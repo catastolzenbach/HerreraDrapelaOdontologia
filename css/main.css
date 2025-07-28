@@ -3947,30 +3947,7 @@ footer p {
 .tratamiento-card p {
     color: #666;
     line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.tratamiento-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.duracion, .precio {
-    background: #f8f9fa;
-    padding: 8px 15px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: #555;
-}
-
-.precio {
-    background: #e3f2fd;
-    color: #1976d2;
-    font-weight: 600;
+    margin-bottom: 30px;
 }
 
 .btn-detalle {
@@ -4281,10 +4258,7 @@ footer p {
         padding: 25px;
     }
     
-    .tratamiento-info {
-        flex-direction: column;
-        gap: 10px;
-    }
+
     
     .modal-content {
         width: 95%;
