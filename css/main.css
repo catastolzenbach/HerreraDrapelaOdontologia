@@ -2554,48 +2554,165 @@ footer p {
 
 @media (max-width: 768px) {
     .hero-contacto {
-        padding: 80px 0;
+        padding: 60px 0;
     }
     
     .hero-contacto h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     
     .hero-contacto h2 {
-        font-size: 2rem;
-    }
-    
-    .info-contacto {
-        padding: 60px 0;
-    }
-    
-    .contacto-info h2 {
-        font-size: 2rem;
-    }
-    
-    .formulario-contacto {
-        padding: 30px 20px;
-    }
-    
-    .formulario-contacto h2 {
         font-size: 1.8rem;
     }
     
+    .hero-contacto h3 {
+        font-size: 1.4rem;
+    }
+    
+    .hero-contacto .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+    
+    .info-contacto {
+        padding: 40px 0;
+    }
+    
+    .contacto-info h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .formulario-contacto {
+        padding: 25px 15px;
+        margin: 0 10px;
+    }
+    
+    .formulario-contacto h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .formulario-contacto p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
     .ubicacion-section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
     
     .ubicacion-section h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+    
+    .ubicacion-section h3 {
+        font-size: 1.1rem;
+        padding: 0 20px;
     }
     
     .info-card {
-        padding: 20px;
+        padding: 20px 15px;
+        margin: 0 10px;
     }
     
     .info-icon {
-        width: 50px;
-        height: 50px;
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .info-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .info-content p {
+        font-size: 0.9rem;
+    }
+    
+    .contacto-extra {
+        margin: 0 10px;
+        padding: 25px 20px;
+    }
+    
+    .contacto-extra h4 {
+        font-size: 1.2rem;
+    }
+    
+    .contacto-extra p {
+        font-size: 0.9rem;
+    }
+    
+    .btn-urgencia {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-enviar {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+    
+    .direccion-card {
+        margin: 0 10px;
+        padding: 20px 15px;
+    }
+    
+    .direccion-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .direccion-card p {
+        font-size: 0.9rem;
+    }
+    
+    .btn-mapa {
+        margin: 0 10px;
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+    
+    .mapa-container {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-contacto h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-contacto h2 {
         font-size: 1.5rem;
+    }
+    
+    .hero-contacto h3 {
+        font-size: 1.2rem;
+    }
+    
+    .contacto-info h2 {
+        font-size: 1.6rem;
+    }
+    
+    .formulario-contacto h2 {
+        font-size: 1.4rem;
+    }
+    
+    .info-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .info-icon {
+        align-self: center;
     }
 }
