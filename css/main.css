@@ -477,8 +477,14 @@ nav ul li a:hover::after {
 .info-card p {
     color: #555;
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 0;
+}
+
+.info-card p br {
+    display: block;
+    content: "";
+    margin-top: 8px;
 }
 
 .btn-contacto {
