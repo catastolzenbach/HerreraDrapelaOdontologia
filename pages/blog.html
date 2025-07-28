@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/main.css">
-    <title>BLOG Herrera Drapela Odontologia</title>
+    <title>Blog - Herrera Drápela Odontología</title>
 </head>
 
 <body class="pagina-blog">
-    <!-- boton volver a inicio -->
+    <!-- Header -->
     <header>
         <div class="barra-superior">
-            <p>Paga tus prestaciones aquí</p>
+            <p>✨ Paga tus prestaciones aquí de forma segura</p>
         </div>
         <div class="navegacion-principal">
             <a href="../index.html">
-                <img src="../images/AHLOGO.png" alt="Logotipo de la consulta" class="logo">
+                <img src="../images/AHLOGO.png" alt="Herrera Drápela Odontología" class="logo">
             </a>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
@@ -27,29 +26,229 @@
             </label>
             <nav>
                 <ul>
-                    <li><a href="../index.html"> Inicio</a></li>
-                    <li><a href="../pages/quiensoy.html"> Quienes Somos</a></li>
-                    <li><a href="../pages/tratamientos.html">Tratamientos</a></li>
-                    <li><a href="../pages/seguros.html">Seguros y Planes</a></li>
-                    <li><a href="../pages/blog.html">Blog</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="quiensoy.html">Quienes Somos</a></li>
+                    <li><a href="tratamientos.html">Tratamientos</a></li>
+                    <li><a href="seguros.html">Seguros y Planes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- texto entrada pagina -->
-        <h1>Blog odontología</h1>
-        <h3>Lo último en Herrera Drápela Odontología.</h3>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero-blog">
+        <div class="container">
+            <h1>BLOG DE SALUD DENTAL</h1>
+            <h2>Lo último en Herrera Drápela Odontología</h2>
+            <p class="hero-subtitle">Descubre consejos, novedades y todo lo que necesitas saber sobre el cuidado de tu sonrisa</p>
+        </div>
+    </section>
 
-    <!-- pie de pagina -->
+    <!-- Categorías -->
+    <section class="categorias-blog">
+        <div class="container">
+            <div class="categorias-grid">
+                <a href="#prevencion" class="categoria-card">
+                    <div class="categoria-icon">🦷</div>
+                    <h3>Prevención</h3>
+                    <p>Cuidado diario y hábitos saludables</p>
+                </a>
+                <a href="#ortodoncia" class="categoria-card">
+                    <div class="categoria-icon">😁</div>
+                    <h3>Ortodoncia</h3>
+                    <p>Alineación dental y sonrisas perfectas</p>
+                </a>
+                <a href="#estetica" class="categoria-card">
+                    <div class="categoria-icon">✨</div>
+                    <h3>Estética Dental</h3>
+                    <p>Tratamientos para una sonrisa hermosa</p>
+                </a>
+                <a href="#implantes" class="categoria-card">
+                    <div class="categoria-icon">🦿</div>
+                    <h3>Implantes</h3>
+                    <p>Soluciones permanentes y seguras</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artículos Destacados -->
+    <section class="articulos-destacados">
+        <div class="container">
+            <h2>Artículos Destacados</h2>
+            <div class="articulos-grid">
+                <article class="articulo-card destacado">
+                    <div class="articulo-imagen">
+                        <div class="articulo-categoria">Prevención</div>
+                        <div class="articulo-placeholder">🦷</div>
+                    </div>
+                    <div class="articulo-content">
+                        <h3>5 Hábitos Diarios para una Sonrisa Saludable</h3>
+                        <p class="articulo-excerpt">
+                            Descubre los hábitos fundamentales que debes incorporar en tu rutina diaria para mantener 
+                            una sonrisa saludable y prevenir problemas dentales comunes.
+                        </p>
+                        <div class="articulo-meta">
+                            <span class="articulo-fecha">15 de Enero, 2024</span>
+                            <span class="articulo-tiempo">5 min de lectura</span>
+                        </div>
+                        <a href="#" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="articulo-card">
+                    <div class="articulo-imagen">
+                        <div class="articulo-categoria">Ortodoncia</div>
+                        <div class="articulo-placeholder">😁</div>
+                    </div>
+                    <div class="articulo-content">
+                        <h3>Invisalign: La Ortodoncia Invisible que Revoluciona las Sonrisas</h3>
+                        <p class="articulo-excerpt">
+                            Conoce cómo Invisalign está transformando la ortodoncia tradicional, ofreciendo 
+                            una alternativa discreta y cómoda para alinear tus dientes.
+                        </p>
+                        <div class="articulo-meta">
+                            <span class="articulo-fecha">10 de Enero, 2024</span>
+                            <span class="articulo-tiempo">4 min de lectura</span>
+                        </div>
+                        <a href="#" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </article>
+
+                <article class="articulo-card">
+                    <div class="articulo-imagen">
+                        <div class="articulo-categoria">Estética</div>
+                        <div class="articulo-placeholder">✨</div>
+                    </div>
+                    <div class="articulo-content">
+                        <h3>Carillas Dentales: Transforma tu Sonrisa en una Sesión</h3>
+                        <p class="articulo-excerpt">
+                            Las carillas dentales son la solución perfecta para corregir imperfecciones y 
+                            lograr una sonrisa de celebridad de forma rápida y segura.
+                        </p>
+                        <div class="articulo-meta">
+                            <span class="articulo-fecha">5 de Enero, 2024</span>
+                            <span class="articulo-tiempo">6 min de lectura</span>
+                        </div>
+                        <a href="#" class="btn-leer-mas">Leer más</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Más Artículos -->
+    <section class="mas-articulos">
+        <div class="container">
+            <h2>Más Artículos</h2>
+            <div class="articulos-grid-pequeños">
+                <article class="articulo-card-pequeño">
+                    <div class="articulo-imagen-pequeña">
+                        <div class="articulo-placeholder-pequeño">🦿</div>
+                    </div>
+                    <div class="articulo-content-pequeño">
+                        <div class="articulo-categoria-pequeña">Implantes</div>
+                        <h4>Implantes Dentales: Todo lo que Necesitas Saber</h4>
+                        <p>Guía completa sobre implantes dentales, desde la consulta inicial hasta la recuperación.</p>
+                        <div class="articulo-meta-pequeño">
+                            <span>3 de Enero, 2024</span>
+                            <span>7 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="articulo-card-pequeño">
+                    <div class="articulo-imagen-pequeña">
+                        <div class="articulo-placeholder-pequeño">🦷</div>
+                    </div>
+                    <div class="articulo-content-pequeño">
+                        <div class="articulo-categoria-pequeña">Prevención</div>
+                        <h4>Alimentos que Benefician tu Salud Dental</h4>
+                        <p>Descubre qué alimentos ayudan a fortalecer tus dientes y mantener tu boca saludable.</p>
+                        <div class="articulo-meta-pequeño">
+                            <span>28 de Diciembre, 2023</span>
+                            <span>4 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="articulo-card-pequeño">
+                    <div class="articulo-imagen-pequeña">
+                        <div class="articulo-placeholder-pequeño">😁</div>
+                    </div>
+                    <div class="articulo-content-pequeño">
+                        <div class="articulo-categoria-pequeña">Ortodoncia</div>
+                        <h4>¿Cuándo es el Momento Ideal para Iniciar Ortodoncia?</h4>
+                        <p>Conoce las señales que indican que es hora de considerar un tratamiento de ortodoncia.</p>
+                        <div class="articulo-meta-pequeño">
+                            <span>20 de Diciembre, 2023</span>
+                            <span>5 min</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="articulo-card-pequeño">
+                    <div class="articulo-imagen-pequeña">
+                        <div class="articulo-placeholder-pequeño">✨</div>
+                    </div>
+                    <div class="articulo-content-pequeño">
+                        <div class="articulo-categoria-pequeña">Estética</div>
+                        <h4>Blanqueamiento Dental: Mitos y Realidades</h4>
+                        <p>Despeja todas tus dudas sobre el blanqueamiento dental y sus resultados reales.</p>
+                        <div class="articulo-meta-pequeño">
+                            <span>15 de Diciembre, 2023</span>
+                            <span>6 min</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>¿Quieres Recibir Nuestros Consejos?</h2>
+                <p>Suscríbete a nuestro newsletter y recibe los mejores consejos de salud dental directamente en tu email.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu email aquí..." required>
+                    <button type="submit" class="btn-suscribir">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿LISTO PARA TRANSFORMAR TU SONRISA?</h2>
+            <h3>Agenda tu consulta y descubre cómo podemos ayudarte</h3>
+            <a href="https://ff.healthatom.io/n7yka4" class="btn-cta">AGENDA TU CITA</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Herrera Drápela Odontología</p>
-        <p>Todos los derechos reservados 2010 © </p>
-        <p>Chile</p>
-        <p>español</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Herrera Drápela Odontología</h4>
+                    <p>Tu sonrisa, nuestra pasión desde 2010</p>
+                </div>
+                <div class="footer-links">
+                    <a href="quiensoy.html">Quienes Somos</a>
+                    <a href="tratamientos.html">Tratamientos</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-legal">
+                    <p>© 2024 Herrera Drápela Odontología. Todos los derechos reservados.</p>
+                    <p>Chile</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
