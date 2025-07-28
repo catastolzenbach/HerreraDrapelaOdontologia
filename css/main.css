@@ -4304,3 +4304,155 @@ footer p {
         font-size: 1.6rem;
     }
 }
+
+/* Tecnología y Laboratorio */
+.tecnologia-section {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.tecnologia-section h2 {
+    font-size: 2.5rem;
+    color: #00a3ad;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tecnologia-section h3 {
+    font-size: 1.2rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+.tecnologia-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.tecnologia-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+}
+
+.tecnologia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.tecnologia-logo {
+    height: 120px;
+    background: linear-gradient(135deg, #00a3ad 0%, #008c94 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-placeholder {
+    font-size: 3rem;
+    color: white;
+}
+
+.tecnologia-content {
+    padding: 25px;
+}
+
+.tecnologia-content h4 {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tecnologia-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tecnologia-features {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.feature {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: #555;
+    border-left: 3px solid #00a3ad;
+}
+
+.btn-tecnologia {
+    background: linear-gradient(135deg, #00a3ad 0%, #008c94 100%);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-tecnologia:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 163, 173, 0.3);
+    color: white;
+}
+
+/* Responsive para Tecnología */
+@media (max-width: 1024px) {
+    .tecnologia-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .tecnologia-section h2 {
+        font-size: 2rem;
+    }
+    
+    .tecnologia-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .tecnologia-content {
+        padding: 20px;
+    }
+    
+    .tecnologia-logo {
+        height: 100px;
+    }
+    
+    .logo-placeholder {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .tecnologia-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    .tecnologia-features {
+        gap: 6px;
+    }
+    
+    .feature {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+    }
+}
