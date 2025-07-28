@@ -2783,17 +2783,7 @@ footer p {
     color: white;
 }
 
-.articulo-categoria {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background: rgba(255,255,255,0.9);
-    color: #00a3ad;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-}
+
 
 .articulo-content {
     padding: 30px;
@@ -2888,17 +2878,7 @@ footer p {
     color: #00a3ad;
 }
 
-.articulo-categoria-pequeña {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #00a3ad;
-    color: white;
-    padding: 3px 8px;
-    border-radius: 15px;
-    font-size: 0.7rem;
-    font-weight: 600;
-}
+
 
 .articulo-content-pequeño {
     padding: 20px;
