@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- link de mi css -->
     <link rel="stylesheet" href="../css/main.css">
-    <title>BLOG Herrera Drapela Odontologia</title>
+    <title>Contacto - Herrera Drápela Odontología</title>
 </head>
 
-<body class="pagina-blog">
-    <!-- boton volver a inicio -->
+<body class="pagina-contacto">
+    <!-- Header -->
     <header>
         <div class="barra-superior">
-            <p>Paga tus prestaciones aquí</p>
+            <p>✨ Paga tus prestaciones aquí de forma segura</p>
         </div>
         <div class="navegacion-principal">
             <a href="../index.html">
-                <img src="../images/AHLOGO.png" alt="Logotipo de la consulta" class="logo">
+                <img src="../images/AHLOGO.png" alt="Herrera Drápela Odontología" class="logo">
             </a>
             <input type="checkbox" id="menu-toggle">
             <label for="menu-toggle" class="menu-icon">
@@ -27,33 +26,172 @@
             </label>
             <nav>
                 <ul>
-                    <li><a href="../index.html"> Inicio</a></li>
-                    <li><a href="../pages/quiensoy.html"> Quienes Somos</a></li>
-                    <li><a href="../pages/tratamientos.html">Tratamientos</a></li>
-                    <li><a href="../pages/seguros.html">Seguros y Planes</a></li>
-                    <li><a href="../pages/blog.html">Blog</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="quiensoy.html">Quienes Somos</a></li>
+                    <li><a href="tratamientos.html">Tratamientos</a></li>
+                    <li><a href="seguros.html">Seguros y Planes</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- texto entrada pagina -->
-        <h1>Blog: Inspírate y Descubre Más</h1>
-        <h3>Bienvenido a nuestro blog, un espacio donde compartimos tendencias, consejos de estilo, historias detrás de
-            nuestras colecciones y mucho más. Aquí encontrarás ideas para combinar tus accesorios, tips para cuidar tus
-            piezas favoritas y contenido que te conectará con el mundo de la moda y la creatividad.</h3>
-        <h3>Déjate inspirar y transforma tu forma de expresar tu estilo con nuestras recomendaciones y novedades.</h3>
-        <h3>Explora nuestro blog y encuentra nuevas formas de brillar.</h3>
-    </main>
+    <!-- Hero Section -->
+    <section class="hero-contacto">
+        <div class="container">
+            <h1>¿TIENES</h1>
+            <h2>DUDAS?</h2>
+            <h3>Contáctanos</h3>
+            <p class="hero-subtitle">Escríbenos qué necesitas y te responderemos a la brevedad</p>
+        </div>
+    </section>
 
-    <!-- pie de pagina -->
+    <!-- Información de Contacto -->
+    <section class="info-contacto">
+        <div class="container">
+            <div class="contacto-grid">
+                <div class="contacto-info">
+                    <h2>Información de Contacto</h2>
+                    
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h4>Teléfono</h4>
+                                <p>+56 9 XXXX XXXX</p>
+                                <p>+56 2 XXXX XXXX</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>contacto@herreradrapela.cl</p>
+                                <p>info@herreradrapela.cl</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contacto-extra">
+                        <h4>¿Necesitas atención urgente?</h4>
+                        <p>Para urgencias dentales fuera de horario, contáctanos directamente al celular y te atenderemos lo antes posible.</p>
+                        <a href="tel:+569XXXXXXX" class="btn-urgencia">LLAMAR AHORA</a>
+                    </div>
+                </div>
+
+                <div class="formulario-contacto">
+                    <h2>Envíanos un Mensaje</h2>
+                    <p>Completa el formulario y te contactaremos a la brevedad</p>
+                    
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="rut">RUT</label>
+                            <input type="text" id="rut" name="rut" placeholder="12.345.678-9">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">Servicio de interés</label>
+                            <select id="servicio" name="servicio">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="consulta-general">Consulta General</option>
+                                <option value="ortodoncia">Ortodoncia</option>
+                                <option value="implantologia">Implantología</option>
+                                <option value="estetica-dental">Estética Dental</option>
+                                <option value="cirugia-bucal">Cirugía Bucal</option>
+                                <option value="urgencia">Urgencia Dental</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos qué necesitas..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ubicación y Mapa -->
+    <section class="ubicacion-section">
+        <div class="container">
+            <h2>Nuestra Ubicación</h2>
+            <h3>Encuéntranos en el corazón de Providencia</h3>
+            
+            <div class="ubicacion-content">
+                <div class="ubicacion-info">
+                    <div class="direccion-card">
+                        <h4>📍 Román Díaz 915, Providencia</h4>
+                        <p>Nuestra clínica está ubicada en una zona céntrica y de fácil acceso.</p>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=Román+Díaz+915+Providencia" target="_blank" class="btn-mapa">
+                        📍 Ver en Google Maps
+                    </a>
+                </div>
+
+                <div class="mapa-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1361.5677919243626!2d-70.62130551097015!3d-33.43851566486668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7fca6d4d45%3A0x5860e4d6dc363c0f!2sRom%C3%A1n%20D%C3%ADaz%20915%2C207500840%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1747529814167!5m2!1ses-419!2scl"
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿LISTO PARA TRANSFORMAR TU SONRISA?</h2>
+            <h3>Agenda tu primera consulta y descubre cómo podemos ayudarte</h3>
+            <div class="cta-buttons">
+                <a href="https://ff.healthatom.io/n7yka4" class="btn-cta">AGENDA TU CITA</a>
+                <a href="tel:+569XXXXXXX" class="btn-cta-secundario">LLAMAR AHORA</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Herrera Drápela Odontología</p>
-        <p>Todos los derechos reservados 2010 © </p>
-        <p>Chile</p>
-        <p>español</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h4>Herrera Drápela Odontología</h4>
+                    <p>Tu sonrisa, nuestra pasión desde 2010</p>
+                </div>
+                <div class="footer-links">
+                    <a href="quiensoy.html">Quienes Somos</a>
+                    <a href="tratamientos.html">Tratamientos</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                <div class="footer-legal">
+                    <p>© 2024 Herrera Drápela Odontología. Todos los derechos reservados.</p>
+                    <p>Chile</p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 
