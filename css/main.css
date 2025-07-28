@@ -3278,34 +3278,7 @@ footer p {
     font-weight: 600;
 }
 
-.articulos-relacionados {
-    list-style: none;
-    padding: 0;
-}
 
-.articulos-relacionados li {
-    margin-bottom: 15px;
-    padding-bottom: 15px;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.articulos-relacionados li:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.articulos-relacionados a {
-    color: #00a3ad;
-    text-decoration: none;
-    font-size: 1rem;
-    line-height: 1.4;
-    transition: color 0.3s ease;
-}
-
-.articulos-relacionados a:hover {
-    color: #008c94;
-}
 
 .sidebar-card p {
     color: #666;
